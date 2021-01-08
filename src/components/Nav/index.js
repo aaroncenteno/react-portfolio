@@ -1,7 +1,12 @@
 import React, { useEffect } from 'react';
 import { capitalizeFirstLetter } from '../../utils/helpers';
 
-function Nav() {
+function Nav(props) {
+    const {
+        contactSelected,
+        setContactSelected
+    } = props;
+
     return (
         <header className="flex-row px-1">
             <h2>
@@ -12,7 +17,7 @@ function Nav() {
             <nav>
                 <ul className="flex-row">
                     <li className="mx-2">
-                        <a data-testid="about" href="#about">
+                        <a data-testid="about" href="#about" onClick={() => setContactSelected(false)}>
                             About Me
                         </a>
                     </li>
@@ -21,13 +26,16 @@ function Nav() {
                             Portfolio
                         </a>
                     </li>
-                    <li className="mx-2">
+                    <li className={`mx-2 ${contactSelected && 'navActive'}`}>
+                        <span onClick={() => setContactSelected(true)}>Contact Me</span>
+                    </li>
+                    {/* <li className="mx-2">
                         <a data-testid="contact" href="#contact">
                             Contact Me
                         </a>
-                    </li>
+                    </li> */}
                     <li className="mx-2">
-                        <a data-testid="resume" href="#resume">
+                        <a data-testid="resume" href="#resume" onClick={() => setContactSelected(false)}>
                             Resumé
                         </a>
                     </li>
