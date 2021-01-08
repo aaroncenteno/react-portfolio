@@ -8,7 +8,7 @@ function Nav(props) {
     } = props;
 
     return (
-        <header className="flex-row px-1">
+        <header className="flex-row space-between px-1">
             <h2>
                 <a data-testid="link" href="/">
                     <img className="logo-img" alt="ACenteno-Logo" src={require("../../assets/large/logo.jpg").default}/>
