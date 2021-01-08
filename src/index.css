@@ -139,13 +139,8 @@ nav li span {
   padding-bottom: var(--spacing-two);
 }
 
-.navactive {
-  background: var(--primary-color);
-  color: var(--secondary-color);
-  border-radius: 15px;
-  text-shadow: none;
-  text-decoration: none;
-  padding: 5px;
+.nav-active {
+  text-decoration: underline!important;
 }
 
 .section-title {

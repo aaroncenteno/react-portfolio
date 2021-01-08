@@ -7,7 +7,6 @@ import Portfolio from './components/Portfolio';
 import Resume from './components/Resume';
 
 function App() {
-  // const [contactSelected, setContactSelected] = useState(false);
   const pages = ['about', 'portfolio', 'contact', 'resume'];
   const [currentPage, setCurrentPage] = useState(pages[0]);
 

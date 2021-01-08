@@ -1,11 +1,8 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import { capitalizeFirstLetter } from '../../utils/helpers';
 
 function Nav(props) {
-    const {
-        contactSelected,
-        setContactSelected
-    } = props;
+  const { pages = [], currentPage, setCurrentPage} = props;
 
     return (
         <header className="flex-row space-between px-1">
@@ -16,28 +13,29 @@ function Nav(props) {
             </h2>
             <nav>
                 <ul className="flex-row">
-                    <li className="mx-2">
-                        <a data-testid="about" href="#about" onClick={() => setContactSelected(false)}>
-                            About Me
-                        </a>
+                    <li className={`${currentPage === 'about' && 'nav-active'}`}>
+                        <span
+                        onClick={()=> setCurrentPage('about')}>
+                            <a href="#about">About Me</a>
+                        </span>
                     </li>
-                    <li className="mx-2">
-                        <a data-testid="portfolio" href="#portfolio">
-                            Portfolio
-                        </a>
+                    <li className={`${currentPage === 'portfolio' && 'nav-active'}`}>
+                        <span
+                        onClick={()=> setCurrentPage('portfolio')}>
+                            <a href="#portfolio">Portfolio</a>
+                        </span>
                     </li>
-                    <li className={`mx-2 ${contactSelected && 'navActive'}`}>
-                        <span onClick={() => setContactSelected(true)}>Contact Me</span>
+                    <li className={`${currentPage === 'contact' && 'nav-active'}`}>
+                        <span
+                        onClick={()=> setCurrentPage('contact')}>
+                            <a href="#contact">Contact Me</a>
+                        </span>
                     </li>
-                    {/* <li className="mx-2">
-                        <a data-testid="contact" href="#contact">
-                            Contact Me
-                        </a>
-                    </li> */}
-                    <li className="mx-2">
-                        <a data-testid="resume" href="#resume" onClick={() => setContactSelected(false)}>
-                            Resumé
-                        </a>
+                    <li className={`${currentPage === 'resume' && 'nav-active'}`}>
+                        <span
+                        onClick={()=> setCurrentPage('resume')}>
+                            <a href="#resume">Resumé</a>
+                        </span>
                     </li>
                 </ul>
             </nav>
