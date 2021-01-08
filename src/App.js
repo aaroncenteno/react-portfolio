@@ -1,8 +1,13 @@
 import React, { useState } from 'react';
 import Nav from './components/Nav';
+import About from './components/About';
+import Contact from './components/Contact';
+import Footer from './components/Footer';
+import Portfolio from './components/Portfolio';
+import Resume from './components/Resume';
 
 function App() {
-  const [contactSelected, setContactSelected] = useState(false);
+  // const [contactSelected, setContactSelected] = useState(false);
   const pages = ['about', 'portfolio', 'contact', 'resume'];
   const [currentPage, setCurrentPage] = useState(pages[0]);
 
@@ -24,10 +29,11 @@ function App() {
 
   return (
     <div>
-      <Nav
-      contactSelected={contactSelected}
-      setContactSelected={setContactSelected}
-      ></Nav>
+      <Nav 
+        pages={pages}
+        currentPage={currentPage}
+        setCurrentPage={setCurrentPage}/>
+        <main>{ternaryNav()}</main>
     </div>
   );
 }
