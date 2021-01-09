@@ -262,7 +262,8 @@ nav li span {
 
 /* Contact Me Styling */
 
-.form-container {
+.form-container,
+.resume-section {
   top: 50%;
   left: 50%;
   transform: translate(75%, -0%);
@@ -277,7 +278,8 @@ nav li span {
   flex-direction: column;
 }
 
-#contact-form {
+#contact-form,
+.resume-container {
   top: 50%;
   left: 50%;
   transform: translate(28%, -0%);
@@ -351,6 +353,26 @@ nav li span {
   transition: 1s ease;
 }
 
+/* Resume Styling */
+.resume-section {
+  color: var(--primary-color);
+  margin-top: 30px;
+}
+
+.resume-download {
+  background-color: var(--primary-color);
+  color: black;
+  padding: 5px;
+  border: solid black 3px;
+  border-radius: 15px;
+  transition: .8s;
+}
+
+.resume-download:hover {
+  background-color: var(--tertiary-color);
+  transition: .5s;
+}
+
 @media screen and (max-width: 775px) {
   .logo-img {
     height: 3em;
@@ -387,12 +409,14 @@ nav li span {
       font-size: 1em;
     }
 
-    .form-container {
+    .form-container,
+    .resume-section {
       width: 80vw;
       transform: translate(15%, 0%);
     }
     
-    #contact-form {
+    #contact-form,
+    .resume-container {
       transform: translate(15%, -0%);
     }
 
@@ -433,5 +457,9 @@ nav li span {
 
   .section-bio {
     padding: 40px 20px;
+  }
+
+  .resume-container {
+    transform: translate(0%, 0%);
   }
 }
