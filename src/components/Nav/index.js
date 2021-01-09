@@ -6,7 +6,7 @@ function Nav(props) {
     return (
         <header className="flex-row space-between px-1">
             <h2>
-                <a data-testid="link" href="/">
+                <a data-testid="link" href="https://aaroncenteno.github.io/react-portfolio/">
                     <img className="logo-img" alt="ACenteno-Logo" src={require("../../assets/large/logo.jpg").default}/>
                 </a>
             </h2>
