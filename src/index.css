@@ -357,6 +357,7 @@ nav li span {
 .resume-section {
   color: var(--primary-color);
   margin-top: 30px;
+  margin-bottom:200px;
 }
 
 .resume-download {
