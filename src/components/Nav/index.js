@@ -1,7 +1,4 @@
 import React from 'react';
-import { faLinkedin, faGithub } from '@fortawesome/free-brands-svg-icons';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { capitalizeFirstLetter } from '../../utils/helpers';
 
 function Nav(props) {
   const { pages = [], currentPage, setCurrentPage} = props;

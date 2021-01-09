@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import resumePdf from '../../assets/resume/AC_Resume08122020.pdf'
 
 function Resume () {
@@ -10,7 +10,8 @@ function Resume () {
 					Download my<span> </span>
 					<a
 						href={resumePdf}
-						target='_blank'
+                        target='_blank'
+                        rel="noreferrer"
                         className="resume-download">
 						Resumé
 					</a>

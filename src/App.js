@@ -33,6 +33,7 @@ function App() {
         currentPage={currentPage}
         setCurrentPage={setCurrentPage}/>
         <main>{ternaryNav()}</main>
+      <Footer/>
     </div>
   );
 }

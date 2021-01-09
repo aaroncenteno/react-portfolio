@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import Work from '../Work';
 import covidCa from '../../assets/small/covid.jpg'
 import fitnessPal from '../../assets/small/fitness-pal-screenshot.jpg'

@@ -7,16 +7,17 @@ function Work (props) {
 
     return (
         <div id="works" href={liveLink} target="_blank" className="work-container">
-            <img src={projectImage} className="project-img"></img>
+            <img src={projectImage} className="project-img" alt={name}></img>
             <div className="link-container">
                 <div className="links">
                     <a
                         href={liveLink}
                         target='_blank'
-                        className='project-name'>
+                        className='project-name'
+                        rel="noreferrer">
                         {name}
                         </a>
-                        <a href={repoLink} target='_blank'>
+                        <a href={repoLink} target='_blank' rel="noreferrer">
                             <FontAwesomeIcon icon={faGithub} className="github-icon"/>
                         </a>
                 </div>
