@@ -6,10 +6,10 @@ function Work (props) {
     const { name, projectImage, liveLink, repoLink } = props;
 
     return (
-        <div id="work">
+        <div id="works" href={liveLink} target="_blank" className="work-container">
             <img src={projectImage} className="project-img"></img>
-            <div className="image-container">
-                <h1>
+            <div className="link-container">
+                <div className="links">
                     <a
                         href={liveLink}
                         target='_blank'
@@ -17,9 +17,9 @@ function Work (props) {
                         {name}
                         </a>
                         <a href={repoLink} target='_blank'>
-                            <FontAwesomeIcon icon={faGithub}/>
+                            <FontAwesomeIcon icon={faGithub} className="github-icon"/>
                         </a>
-                </h1>
+                </div>
             </div>
         </div>
     );

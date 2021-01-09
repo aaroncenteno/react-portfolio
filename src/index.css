@@ -22,16 +22,11 @@ body {
   background-attachment: fixed;
   letter-spacing: .1em;
   font-weight: 600;
-  padding: 0;
-  margin: 0;
+  /* padding: 0;
+  margin: 0; */
   font-size: 18px;
 }
 
-main {
-	margin: 0 auto;
-	max-width: 95%;
-  padding: 50px 30px;
-}
 
 header {
   background-image: url(./assets/cover/hero.jpg);
@@ -43,7 +38,7 @@ header {
 
 header nav {
   padding-top: var(--spacing-five);
-  padding-left: var(--spacing-five);
+  padding-right: var(--spacing-five);
 }
 
 header nav ul li a:hover,
@@ -69,6 +64,7 @@ li {
 
 nav li {
   cursor: pointer;
+  margin: 5px
 }
 
 nav li a,
@@ -141,7 +137,7 @@ nav li span {
 
 .nav-active {
   text-decoration: underline!important;
-  background: #9717ff;
+  background:linear-gradient(rgba(0, 243, 255, 0.6), rgba(0, 135, 245, 0.8));
   border-radius: 15px;
   text-shadow: none;
   padding: 2px;
@@ -176,6 +172,7 @@ nav li span {
   margin-top: 40px;
   width: 100%;
   border-color: var(--primary-color);
+  padding: 0 200px 200px 200px;
 }
 
 .section-bio p {
@@ -184,4 +181,151 @@ nav li span {
   border: solid var(--primary-color) 5px;
   padding: 15px;
   box-shadow:  0 0 10px rgb(0, 243, 255, .5);
+}
+
+/* Work Styling */
+
+#works {
+	margin: 20px;
+  position: relative;
+  height: auto;
+}
+
+.project-img {
+	height: auto;
+	width: 40vw;
+	display: block;
+  position: relative;
+  border: solid var(--primary-color) 5px;
+  border-radius: 25px;
+  box-shadow:  0 0 10px rgb(0, 243, 255, .5);
+}
+
+.github-icon {
+  color: black;
+}
+
+.github-icon:hover {
+  background-color: var(--primary-color);
+  padding: 2px;
+  border-radius: 50%;
+  transition: .8s;
+}
+
+.link-container {
+	top: 50px;
+	left: 25px;
+  position: absolute;
+  transition: .8s ease;
+  opacity: 0;
+  background: linear-gradient(rgba(0, 243, 255, 0.6), rgba(0, 135, 245, 0.8));
+  border-radius: 15px;
+  padding: 10px
+}
+
+.links {
+  font-size: 3em;
+}
+
+#works:hover .project-img {
+  transition: 0.8s ease;
+  opacity: 0.3;
+}
+
+#works:hover .link-container {
+  opacity: 1;
+  transition: 0.8s ease;
+}
+
+.project-name {
+  color: black;
+	margin-right: 20px;
+	text-decoration: none;
+}
+
+.project-name:hover {
+  background-color: var(--primary-color);
+  padding: 2px;
+  border-radius: 20px;
+  transition: .8s;
+  text-decoration: underline;
+}
+
+/* Portfolio Styling */
+
+.portfolio-container {
+	display: flex;
+	flex-direction: row;
+  flex-wrap: wrap;
+  padding: 0px 100px 200px 100px;
+}
+
+@media screen and (max-width: 775px) {
+  .logo-img {
+    height: 3em;
+    border-radius: 50%;
+    margin-left: auto;
+    top: 50%;
+    left: 50%;
+    transform: translate(40%, -0%);
+  }
+
+    header nav ul li a:hover,
+    header nav ul li span:hover {
+    background: none;
+    color: var(--primary-color);
+    border-radius: 15px;
+    text-shadow: none;
+    text-decoration: none;
+    padding: 5px;
+    }
+
+    .section-bio {
+      padding: 20px 40px;
+    }
+
+    .portfolio-container {
+      padding: 80px 20px;
+    }
+
+    .link-container {
+      opacity: 1;
+    }
+
+    .links {
+      font-size: 1em;
+    }
+}
+
+
+@media screen and (max-width: 575px) {
+  nav {
+    padding-left: 40px;
+  }
+
+  .logo-img {
+    height: 8em;
+    border-radius: 50%;
+    margin-left: auto;
+    top: 50%;
+    left: 50%;
+    transform: translate(10%, -0%);
+  }
+  
+  .headshot {
+    height: 12em;
+    transform: translate(-60%, -0%)
+  }
+
+  .portfolio-container {
+    padding: 0px 20px;
+  }
+
+  .project-img {
+    width: 80vw;
+  }
+
+  .section-bio {
+    padding: 40px 20px;
+  }
 }
