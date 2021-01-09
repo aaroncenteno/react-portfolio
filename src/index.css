@@ -260,6 +260,97 @@ nav li span {
   padding: 0px 100px 200px 100px;
 }
 
+/* Contact Me Styling */
+
+.form-container {
+  top: 50%;
+  left: 50%;
+  transform: translate(75%, -0%);
+  background-color: var(--secondary-opacity);
+  border-radius: 10px;
+  border: solid var(--primary-color) 5px;
+  padding: 15px;
+  box-shadow:  0 0 10px rgb(0, 243, 255, .5);
+  width: 40vw;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+#contact-form {
+  top: 50%;
+  left: 50%;
+  transform: translate(28%, -0%);
+}
+
+#contact-form div {
+  margin-top: 4em;
+}
+
+#contact-form label,
+.error-text {
+  background-color: var(--secondary-opacity);
+  border-radius: 10px;
+  border: solid var(--primary-color) 5px;
+  padding: 15px;
+  box-shadow:  0 0 10px rgb(0, 243, 255, .5);
+  color: var(--primary-color);
+  margin-right: 40px;
+  margin-bottom: var(--spacing-two);
+  display: inline-block;
+  position: relative;
+  font-size: 1.5em;
+}
+
+.error-text {
+  font-size: .9em;
+  border: solid rgb(255, 0, 0) 5px;
+  color: #ff0000;
+  box-shadow: 0 0 10px rgb(255, 0, 0);
+}
+
+#contact-form input,
+#contact-form textarea {
+  display: inline-block;
+  position: relative;
+  background-color: black;
+  border: solid var(--primary-color) 5px;
+  border-radius: 10px;
+  box-shadow:  0 0 10px rgb(0, 243, 255, .5);
+  color: #00F3FF;
+  width: 20vw;
+  height: auto;
+  font-size: 18px;
+  padding: 3px;
+}
+
+#contact-form input:focus,
+#contact-form textarea:focus {
+  outline: none;
+}
+
+#contact-form textarea {
+  height: 200px;
+}
+
+.contact-submit {
+  background-image: linear-gradient(to left,rgba(26, 46, 61, 0.9) 20%, rgba(0, 243, 255, 0.8)40%, rgba(26, 46, 61, 0.9) 75%);
+  font-size: 2em;
+  margin-top: 25px;
+  border: none;
+  padding: 10px;
+  border: solid var(--primary-color) 5px;
+  border-radius: 10px;
+  box-shadow:  0 0 10px rgb(0, 243, 255, .5);
+  cursor: pointer;
+  transition: 5s;
+}
+
+.contact-submit:hover {
+  background-image:linear-gradient(to left,rgba(0, 243, 255, 0.9) 20%, rgba(26, 46, 61, 0.9)45%, rgba(0, 243, 255, 0.9) 85%);
+  transition: 1s ease;
+}
+
 @media screen and (max-width: 775px) {
   .logo-img {
     height: 3em;
@@ -295,6 +386,21 @@ nav li span {
     .links {
       font-size: 1em;
     }
+
+    .form-container {
+      width: 80vw;
+      transform: translate(15%, 0%);
+    }
+    
+    #contact-form {
+      transform: translate(15%, -0%);
+    }
+
+    #contact-form input,
+    #contact-form textarea {
+      width: 50vw;
+    }
+
 }
 
 
