@@ -1,70 +1,59 @@
-# Getting Started with Create React App
+![License](https://img.shields.io/static/v1?label=License&message=MIT&color=BLUE)
+# react-portfolio
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Description
 
-## Available Scripts
+This weeks challenge was to rebuild our portfolio using React.JS. React is a popular Single-Page Application, or SPA, language that a lot of big companies like to use. Apps are popularly built in React because of their effciency when loading. Users will see quick load times beteen pages and also functional responsiveness across media devices. In my personal portfolio users can navigate between four pages, the "About", "Portfolio", "Contact" and "Resumé" pages. All of these pages load quickly and effciently thanks to React. 
 
-In the project directory, you can run:
+## Table of Contents
 
-### `npm start`
+* [Installation](#installation)
+* [Usage](#usage)
+* [License](#license)
+* [Contributing](#contributing)
+* [Links](#links)
+* [Questions](#questions)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Installation 
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+Run 'npm install' in the command line to install all the necessary dependencies if trying to run the app locally.
 
-### `npm test`
+## Usage
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+To access this application simply navigate to https://aaroncenteno.github.io/react-portfolio/  and begin browsing my projects. 
 
-### `npm run build`
+## Licenses
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+* MIT
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Contributing
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+* Aaron Centeno
 
-### `npm run eject`
+## Technologies Used
+* Node Modules
+* GitHub
+* JavaScript
+* React.js
+* Terminal
+* CSS
+* Font Awesome Library
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+## Screenshots
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+<img src="./public/react-portfolio.jpg">
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+## Links
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+Live App: https://aaroncenteno.github.io/react-portfolio/
 
-## Learn More
+GitHub Repo: https://github.com/aaroncenteno/react-portfolio
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Questions
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Contact Information for questions: 
 
-### Code Splitting
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+GitHub: [aaroncenteno](https://www.github.com/aaroncenteno) 
 
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+E-mail: asamcent@gmail.com
