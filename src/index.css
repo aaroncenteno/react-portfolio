@@ -282,11 +282,11 @@ nav li span {
 .resume-container {
   top: 50%;
   left: 50%;
-  transform: translate(28%, -0%);
+  transform: translate(24%, -0%);
 }
 
 #contact-form div {
-  margin-top: 4em;
+  margin-top: 2em;
 }
 
 #contact-form label,
@@ -336,8 +336,9 @@ nav li span {
 }
 
 .contact-submit {
-  background-image: linear-gradient(to left,rgba(26, 46, 61, 0.9) 20%, rgba(0, 243, 255, 0.8)40%, rgba(26, 46, 61, 0.9) 75%);
+  background-image: linear-gradient(145deg,rgba(0, 0, 0, 0.9) 20%, rgba(52, 93, 95, 0.8)40%, rgba(0, 0, 0, 0.9) 75%);
   font-size: 2em;
+  color: var(--primary-color);
   margin-top: 25px;
   border: none;
   padding: 10px;
@@ -345,12 +346,13 @@ nav li span {
   border-radius: 10px;
   box-shadow:  0 0 10px rgb(0, 243, 255, .5);
   cursor: pointer;
-  transition: 5s;
+  top: 50%;
+  left: 50%;
+  transform: translate(50%, 0%);
 }
 
 .contact-submit:hover {
-  background-image:linear-gradient(to left,rgba(0, 243, 255, 0.9) 20%, rgba(26, 46, 61, 0.9)45%, rgba(0, 243, 255, 0.9) 85%);
-  transition: 1s ease;
+  background-image:linear-gradient(145deg,rgba(52, 93, 95, 0.9) 20%, rgba(0, 0, 0, 0.9)40%, rgba(52, 93, 95, 0.9) 75%);
 }
 
 /* Resume Styling */
