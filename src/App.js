@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Switch} from 'react-router-dom';
 
 import Nav from './components/Nav';
 import About from './components/About';
@@ -37,10 +37,10 @@ function App() {
           setCurrentPage={setCurrentPage}/>
           <main>
             <Switch>
-              <Route  path='/' component={About}/>
-              <Route  path='/portfolio' component={Portfolio}/>
-              <Route  path='/contact' component={Contact}/>
-              <Route  path='/resume' component={Resume}/>
+              <Route exact path='/react-portfolio/' component={About}/>
+              <Route exact path='/react-portfolio/portfolio' component={Portfolio}/>
+              <Route exact path='/react-portfolio/contact' component={Contact}/>
+              <Route exact path='/react-portfolio/resume' component={Resume}/>
             </Switch>
           </main>
           {/* <main>{ternaryNav()}</main> */}
