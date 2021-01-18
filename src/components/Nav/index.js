@@ -1,4 +1,5 @@
 import React from 'react';
+import {BrowserRouter as Route, Swithch, Link } from 'react-router-dom';
 
 function Nav(props) {
   const { pages = [], currentPage, setCurrentPage} = props;
@@ -6,34 +7,34 @@ function Nav(props) {
     return (
         <header className="flex-row space-between px-1">
             <h2>
-                <a data-testid="link" href="https://aaroncenteno.github.io/react-portfolio/">
+                <Link to='/'>
                     <img className="logo-img" alt="ACenteno-Logo" src={require("../../assets/large/logo.jpg").default}/>
-                </a>
+                </Link>
             </h2>
             <nav>
                 <ul className="flex-row">
                     <li className={`${currentPage === 'about' && 'nav-active'}`}>
                         <span
                         onClick={()=> setCurrentPage('about')}>
-                            <a href="#about">About Me</a>
+                            <Link to="/">About Me</Link>
                         </span>
                     </li>
                     <li className={`${currentPage === 'portfolio' && 'nav-active'}`}>
                         <span
                         onClick={()=> setCurrentPage('portfolio')}>
-                            <a href="#portfolio">Portfolio</a>
+                            <Link to="/portfolio">Portfolio</Link>
                         </span>
                     </li>
                     <li className={`${currentPage === 'contact' && 'nav-active'}`}>
                         <span
                         onClick={()=> setCurrentPage('contact')}>
-                            <a href="#contact">Contact Me</a>
+                            <Link to="/contact">Contact Me</Link>
                         </span>
                     </li>
                     <li className={`${currentPage === 'resume' && 'nav-active'}`}>
                         <span
                         onClick={()=> setCurrentPage('resume')}>
-                            <a href="#resume">Resumé</a>
+                            <Link to="/resume">Resumé</Link>
                         </span>
                     </li>
                 </ul>
