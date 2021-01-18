@@ -403,6 +403,16 @@ footer ul {
   transition: .5s;
 }
 
+@media screen and (max-width: 1300px) {
+  .project-img {
+    width: 39vw;
+  }
+
+  .links {
+    font-size: 2.5em;
+  }
+}
+
 @media screen and (max-width: 775px) {
   .logo-img {
     height: 3em;
