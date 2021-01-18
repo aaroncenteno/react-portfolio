@@ -37,10 +37,10 @@ function App() {
           setCurrentPage={setCurrentPage}/>
           <main>
             <Switch>
-              <Route exact path='/' component={About}/>
-              <Route exact path='/portfolio' component={Portfolio}/>
-              <Route exact path='/contact' component={Contact}/>
-              <Route exact path='/resume' component={Resume}/>
+              <Route  path='/' component={About}/>
+              <Route  path='/portfolio' component={Portfolio}/>
+              <Route  path='/contact' component={Contact}/>
+              <Route  path='/resume' component={Resume}/>
             </Switch>
           </main>
           {/* <main>{ternaryNav()}</main> */}
