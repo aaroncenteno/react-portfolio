@@ -10,7 +10,7 @@ function ContactForm() {
     function handleChange(e) {
         if(e.target.name === 'email') {
             const isValid = validateEmail(e.target.value);
-            console.log(isValid);
+            // console.log(isValid);
             // IsValid Conditional Statement
             if(!isValid) {
                 setErrorMessage('Your email is invalid.');
@@ -30,10 +30,10 @@ function ContactForm() {
         console.log('errorMessage', errorMessage);
     }
 
-    console.log(formState)
+    // console.log(formState)
     function handleSubmit(e) {
         e.preventDefault();
-        console.log(formState);
+        // console.log(formState);
     }
     return (
         <section>
